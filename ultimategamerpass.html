@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Gamer Pass | Next Level Gaming &amp; Esports Arena</title>
+  <meta name="description" content="Ultimate Gamer Pass — unlimited gaming access for a full day at Next Level Gaming & Esports Arena. R1500.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Next Level Gaming & Esports Arena logo" class="logo">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="overview.html" class="active">Overview</a></li>
+          <li><a href="fees.html">Calculate Fees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="mobile-nav" class="mobile-nav-label">Menu</label>
+      <select id="mobile-nav" class="mobile-nav" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Menu</option>
+        <option value="index.html">Home</option>
+        <option value="about.html">About Us</option>
+        <option value="overview.html">Overview</option>
+        <option value="fees.html">Calculate Fees</option>
+        <option value="contact.html">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <p class="breadcrumb"><a href="overview.html">&larr; Back to Overview</a></p>
+      <h1>Ultimate Gamer Pass</h1>
+      <p class="subheading">Unlimited access for one full day</p>
+
+      <div class="individual-layout">
+        <div class="individual-image-placeholder">[ Image: Arena / PC gaming setup ]</div>
+
+        <div class="individual-details">
+          <p class="price price-large">R1500</p>
+          <p>Unlimited gaming access for a full day.</p>
+
+          <h3>Includes</h3>
+          <ul class="includes-list">
+            <li>PC gaming</li>
+            <li>Console gaming</li>
+            <li>High-speed internet</li>
+            <li>Snack voucher</li>
+            <li>Tournament entry</li>
+          </ul>
+
+          <form action="fees.html" method="get" class="add-to-quote-form">
+            <input type="hidden" name="experience" value="Ultimate Gamer Pass">
+            <button type="submit" class="btn btn-primary">Add to Quote</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Other Gaming Packages</h2>
+      <ul class="related-list">
+        <li><a href="vipgamingexperience.html">VIP Gaming Experience &mdash; R1500</a></li>
+        <li><a href="esportstrainingpackage.html">Esports Training Package &mdash; R1500</a></li>
+        <li><a href="birthdaypartypackage.html">Birthday Party Package &mdash; R1500</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Next Level Gaming &amp; Esports Arena &middot; Johannesburg, established 2023</p>
+      <p class="social-links">Instagram &middot; TikTok &middot; Discord</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

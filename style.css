@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Next Level Gaming & Esports Arena — stylesheet
+   STATUS: foundation only. Full component styling (cards, forms, nav,
+   responsive breakpoints) is planned for the next development stage, per
+   the project's phased approach (HTML structure now, CSS/JS styling next).
+   ========================================================================== */
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Brand palette — from the group's colour/logo direction:
+   black (atmosphere), blue/cyan (technology), green (energy), white (readability) */
+:root {
+  --color-black: #0a0a0a;
+  --color-card: #1c1c1c;
+  --color-cyan: #29bff5;
+  --color-green: #8be223;
+  --color-white: #ffffff;
+  --color-gray: #9e9ea3;
+  --color-border: #3a3a3a;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-cyan);
+}
+
+/* TODO (next stage): header/nav layout, hero section, card grid,
+   form styling, footer, responsive breakpoints, table styling. */
+
+/* ==========================================================================
+   Styles for things the JavaScript (script.js) creates.
+   ========================================================================== */
+[hidden] {
+  display: none !important;
+}
+
+.field-error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+input.invalid,
+textarea.invalid {
+  border: 2px solid #ff6b6b;
+}
+
+.form-status {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border: 1px solid var(--color-border);
+}
+
+.form-status.success {
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.form-status.error {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.quote-notice {
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--color-cyan);
+  background: var(--color-card);
+}
+
+#summary-items {
+  margin: 0.5rem 0 1rem 1.25rem;
+  color: var(--color-gray);
+}

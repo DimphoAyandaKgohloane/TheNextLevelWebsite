@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview | Next Level Gaming &amp; Esports Arena</title>
+  <meta name="description" content="Browse Next Level Gaming & Esports Arena's gaming packages and individual experiences, with fees and details for each.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Next Level Gaming & Esports Arena logo" class="logo">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="overview.html" class="active">Overview</a></li>
+          <li><a href="fees.html">Calculate Fees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="mobile-nav" class="mobile-nav-label">Menu</label>
+      <select id="mobile-nav" class="mobile-nav" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Menu</option>
+        <option value="index.html">Home</option>
+        <option value="about.html">About Us</option>
+        <option value="overview.html">Overview</option>
+        <option value="fees.html">Calculate Fees</option>
+        <option value="contact.html">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Overview</h1>
+      <p class="subheading">Browse our gaming packages and individual experiences.</p>
+
+      <!-- Drop-down menu: sort/filter control -->
+      <div class="filter-row">
+        <label for="sort-experiences">Sort by:</label>
+        <select id="sort-experiences" name="sort-experiences">
+          <option value="name">Name (A&ndash;Z)</option>
+          <option value="price-asc">Price (Low to High)</option>
+          <option value="price-desc">Price (High to Low)</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gaming Packages</h2>
+      <ul class="experience-list">
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="ultimategamerpass.html">Ultimate Gamer Pass</a></h3>
+              <p>Unlimited gaming access for a full day.</p>
+              <p class="price">R1500</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <!-- Additional individual pages follow the same template as
+                   ultimategamerpass.html and will be added next. -->
+              <h3><a href="vipgamingexperience.html">VIP Gaming Experience</a></h3>
+              <p>Premium gaming experience with exclusive facilities.</p>
+              <p class="price">R1500</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="esportstrainingpackage.html">Esports Training Package</a></h3>
+              <p>Improve competitive gaming skills with professional coaching.</p>
+              <p class="price">R1500</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="birthdaypartypackage.html">Birthday Party Package</a></h3>
+              <p>Host a gaming-themed birthday celebration.</p>
+              <p class="price">R1500</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Individual Experiences</h2>
+      <ul class="experience-list">
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="virtualrealityexperience.html">Virtual Reality Experience</a></h3>
+              <p>Explore immersive virtual reality games.</p>
+              <p class="price">R750</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="racingsimulatorchallenge.html">Racing Simulator Challenge</a></h3>
+              <p>Race on professional driving simulators.</p>
+              <p class="price">R750</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="experience-list-item">
+            
+            <div class="experience-info">
+              <h3><a href="escaperoomchallenge.html">Escape Room Challenge</a></h3>
+              <p>Solve puzzles and escape before time runs out.</p>
+              <p class="price">R750</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fee Summary</h2>
+      <table class="fee-table">
+        <caption>All gaming packages and individual experiences with their fees</caption>
+        <thead>
+          <tr>
+            <th scope="col">Package / Experience</th>
+            <th scope="col">Type</th>
+            <th scope="col">Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ultimate Gamer Pass</td><td>Package</td><td>R1500</td></tr>
+          <tr><td>VIP Gaming Experience</td><td>Package</td><td>R1500</td></tr>
+          <tr><td>Esports Training Package</td><td>Package</td><td>R1500</td></tr>
+          <tr><td>Birthday Party Package</td><td>Package</td><td>R1500</td></tr>
+          <tr><td>Virtual Reality Experience</td><td>Individual</td><td>R750</td></tr>
+          <tr><td>Racing Simulator Challenge</td><td>Individual</td><td>R750</td></tr>
+          <tr><td>Escape Room Challenge</td><td>Individual</td><td>R750</td></tr>
+        </tbody>
+      </table>
+      <p class="form-note">
+        Booking more than one? Discounts apply: 2 bookings &ndash; 5%,
+        3 bookings &ndash; 10%, more than 3 &ndash; 15%. Use our
+        <a href="fees.html">fee calculator</a> to get a quote.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Next Level Gaming &amp; Esports Arena &middot; Johannesburg, established 2023</p>
+      <p class="social-links">Instagram &middot; TikTok &middot; Discord</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

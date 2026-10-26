@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Fees | Next Level Gaming &amp; Esports Arena</title>
+  <meta name="description" content="Select one or more experiences and calculate a VAT-inclusive quotation from Next Level Gaming & Esports Arena.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Next Level Gaming & Esports Arena logo" class="logo">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="fees.html" class="active">Calculate Fees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="mobile-nav" class="mobile-nav-label">Menu</label>
+      <select id="mobile-nav" class="mobile-nav" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Menu</option>
+        <option value="index.html">Home</option>
+        <option value="about.html">About Us</option>
+        <option value="overview.html">Overview</option>
+        <option value="fees.html">Calculate Fees</option>
+        <option value="contact.html">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Calculate Fees</h1>
+      <p class="subheading">Select one or more experiences to request a VAT-inclusive quotation.</p>
+
+      <div class="fees-layout">
+        <form id="fees-form" class="fees-form" novalidate>
+          <fieldset>
+            <legend>Your Details</legend>
+
+            <div class="form-group">
+              <label for="fullname">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullname" name="fullname" required>
+              <p class="field-error" id="fullname-error" hidden>Please enter your full name.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="082 123 4567" required>
+              <p class="field-error" id="phone-error" hidden>Please enter a valid phone number.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required>
+              <p class="field-error" id="email-error" hidden>Please enter a valid email address.</p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select Experiences</legend>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-ultimate" name="experiences" value="1500" data-name="Ultimate Gamer Pass">
+              <label for="exp-ultimate">Ultimate Gamer Pass &mdash; R1500</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-vip" name="experiences" value="1500" data-name="VIP Gaming Experience">
+              <label for="exp-vip">VIP Gaming Experience &mdash; R1500</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-esports" name="experiences" value="1500" data-name="Esports Training Package">
+              <label for="exp-esports">Esports Training Package &mdash; R1500</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-birthday" name="experiences" value="1500" data-name="Birthday Party Package">
+              <label for="exp-birthday">Birthday Party Package &mdash; R1500</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-vr" name="experiences" value="750" data-name="Virtual Reality Experience">
+              <label for="exp-vr">Virtual Reality Experience &mdash; R750</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-racing" name="experiences" value="750" data-name="Racing Simulator Challenge">
+              <label for="exp-racing">Racing Simulator Challenge &mdash; R750</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="exp-escape" name="experiences" value="750" data-name="Escape Room Challenge">
+              <label for="exp-escape">Escape Room Challenge &mdash; R750</label>
+            </div>
+          </fieldset>
+
+          <!-- Calculator button: JS (next stage) will sum selections, store them
+               in an array, apply the tiered discount, add 15% VAT, and display
+               the total in #quote-summary below. This is a quote only, not a
+               formal invoice. -->
+          <button type="button" id="calculate-btn" class="btn btn-primary">Calculate Total Fee</button>
+          <button type="submit" class="btn btn-secondary">Request Consultation</button>
+        </form>
+
+        <aside class="quote-summary" id="quote-summary">
+          <h2>Quotation Summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="summary-subtotal">R0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <span id="summary-discount">-R0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>VAT (15%)</span>
+            <span id="summary-vat">R0.00</span>
+          </div>
+          <hr>
+          <div class="summary-row summary-total">
+            <span>Total Quote</span>
+            <span id="summary-total">R0.00</span>
+          </div>
+          <p class="form-note">This is a quoted fee only, not a formal invoice.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Next Level Gaming &amp; Esports Arena &middot; Johannesburg, established 2023</p>
+      <p class="social-links">Instagram &middot; TikTok &middot; Discord</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Next Level Gaming &amp; Esports Arena</title>
+  <meta name="description" content="Contact Next Level Gaming & Esports Arena in Johannesburg — phone, email, social media and directions.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Next Level Gaming & Esports Arena logo" class="logo">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="fees.html">Calculate Fees</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="mobile-nav" class="mobile-nav-label">Menu</label>
+      <select id="mobile-nav" class="mobile-nav" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Menu</option>
+        <option value="index.html">Home</option>
+        <option value="about.html">About Us</option>
+        <option value="overview.html">Overview</option>
+        <option value="fees.html">Calculate Fees</option>
+        <option value="contact.html">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p class="subheading">Find the arena and start planning your event.</p>
+
+      <div class="contact-layout">
+        <div class="contact-details">
+          <div class="contact-block">
+            <h3>Phone</h3>
+            <p><a href="tel:0105550199">010 555 0199</a></p>
+          </div>
+          <div class="contact-block">
+            <h3>Email</h3>
+            <p><a href="mailto:hello@nextlevelarena.co.za">hello@nextlevelarena.co.za</a></p>
+          </div>
+          <div class="contact-block">
+            <h3>Address</h3>
+            <p>123 Gaming Lane, Johannesburg, South Africa</p>
+          </div>
+          <div class="contact-block">
+            <h3>Social Media</h3>
+            <p>
+              <a href="#">Instagram</a> &middot;
+              <a href="#">TikTok</a> &middot;
+              <a href="#">Discord</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          [ Map embed: directions to 123 Gaming Lane, Johannesburg ]
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="c-fullname">Full Name <span class="required">*</span></label>
+          <input type="text" id="c-fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="c-email">Email Address <span class="required">*</span></label>
+          <input type="email" id="c-email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="c-message">Message <span class="required">*</span></label>
+          <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note">Fields marked <span class="required">*</span> are required.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Next Level Gaming &amp; Esports Arena &middot; Johannesburg, established 2023</p>
+      <p class="social-links">Instagram &middot; TikTok &middot; Discord</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
